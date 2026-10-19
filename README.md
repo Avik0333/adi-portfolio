@@ -1,75 +1,85 @@
-# React + TypeScript + Vite
+# ADI® — Beyond the Frame
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### A Cinematic Photography Portfolio with an Interactive 3D Experience
 
-Currently, two official plugins are available:
+**ADI® — Beyond the Frame** is an experimental photography portfolio designed to make viewing photographs feel immersive, emotional, and cinematic.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Built around the idea that photography is more than capturing what the eye sees, the experience combines bold editorial typography, cinematic transitions, interactive 3D elements, and a spatial photography gallery.
 
-## React Compiler
+Rather than presenting photographs in a conventional grid, the portfolio explores how images can move through space, form a rotating collection, and become individual focal points for the viewer.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> People. Places. Perspectives.
+>
+> The art of remembering.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✦ Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🎬 Cinematic Introduction
+An editorial-style landing experience featuring oversized typography, a dark visual aesthetic, and an animated 3D camera.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 📸 Cinematic Photo Reveal
+A scroll-driven photographic reveal that introduces the featured image through a gradual transition, creating anticipation before the photograph takes center stage.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 🌐 Interactive Spatial Gallery
+A Three.js-powered photography experience where framed photographs occupy a three-dimensional environment.
 
-```
+- Scroll-driven animation stages
+- Spatial arrangement of photographic frames
+- Interactive frame selection
+- Three-dimensional positioning and rotation
+- A featured photograph that updates with the selected frame
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+### 🖼️ Expanded Photograph Viewer
+Select a photograph to open a larger viewing experience, with keyboard navigation and controls for browsing the collection.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### ✨ Editorial Visual Design
+The interface combines:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Minimal, dark backgrounds
+- Oversized editorial typography
+- Monochromatic photography
+- Subtle red accents
+- Cinematic transitions
+- Carefully positioned interface elements
 
-```
+### 📱 Responsive Design
+Responsive styling adapts the experience to different screen sizes, with reduced-motion considerations for accessibility.
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| React | Component-based user interface |
+| TypeScript | Type safety and maintainable code |
+| Vite | Development server and production build |
+| Three.js | 3D rendering |
+| React Three Fiber | React renderer for Three.js |
+| React Three Drei | Helpers for the 3D scene |
+| GSAP | Animation and scroll-driven transitions |
+| GSAP ScrollTrigger | Scroll-based animation control |
+| Tailwind CSS | Styling infrastructure |
+| Custom CSS | Layout, typography, transitions, and visual effects |
+| Lucide React | Interface icons |
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+### Prerequisites
+
+Install the following:
+
+- [Node.js](https://nodejs.org/)
+- npm
+- Git
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Avik0333/adi-portfolio.git
